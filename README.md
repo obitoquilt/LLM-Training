@@ -180,6 +180,12 @@ def tokenize(self, text: str) -> List[str]:
 >>> ['This', 'Ġis', 'Ġ', 'n', 'o', 't', 'Ġa', 'Ġtoken', '.']
 ```
 
+~10-100k possible tokens
+
+1 token ~= `0.75` of word
+
+![](images/token.png)
+
 **NOTE**：解码过程不是简单地将 token IDs 映射回 tokens，还需要合并那些被分为多个 token 的单词。
 
 
